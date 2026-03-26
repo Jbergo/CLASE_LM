@@ -1,0 +1,104 @@
+/*VARIABLES E IMPORTACIONES*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --color-primary: #1d4ed8;
+  --color-dark: #0f172a;
+  --color-accent: #f59e0b;
+  --color-bg: #f8fafc;
+  --color-white: #ffffff;
+  --color-text: #475569;
+
+  --color-bg-light-gradient: linear-gradient(180deg,#f8fafc 0%, #ffffff 20%);
+  --color-bg-dark-gradient: linear-gradient(90deg,#1d4ed8 0%, #0f172a 100%);
+
+  --font-title: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --twenty: 20px;
+}
+
+/*RESET CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+img {
+  width: 100px;
+}
+
+/*ESTILOS GENERALES*/
+h1, h4 {
+    color: var(--color-primary);
+    font-family: var(--font-title);
+}
+
+h2, h3 {
+    color: var(--color-dark);
+    font-family: var(--font-title);
+}
+
+body {
+    color: var(--color-text);
+    font-family: var(--font-body);
+}
+
+header, main, section {
+    background: var(--color-bg-light-gradient)
+}
+
+aside, #social {
+    background: var(--color-bg-dark-gradient);
+}
+
+footer {
+    background-color: var(--color-dark);
+}
+
+.blue-btn {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 12px 20px;
+    border-radius: 15px;
+}
+
+.blue-btn:hover {
+
+}
+
+/*HEADER*/
+header {
+    border-bottom: 1px solid black;
+    padding: var(--twenty);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header > div {
+    text-align: center;
+}
+
+nav > ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: var(--twenty);
+}
