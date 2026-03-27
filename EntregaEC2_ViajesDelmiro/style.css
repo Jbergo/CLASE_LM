@@ -78,7 +78,8 @@ footer {
 }
 
 .blue-btn:hover {
-
+    background-color: var(--color-dark);
+    transition: all 0.1s linear;
 }
 
 /*HEADER*/
@@ -88,17 +89,25 @@ header {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
 }
 
 header > div {
     text-align: center;
+    border-bottom: 1px solid var(--color-dark);
+    padding-bottom: 5px;
 }
 
 nav > ul {
+    width: 100%;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     gap: var(--twenty);
+}
+
+nav li {
+    padding: 10px;
 }
